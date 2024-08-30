@@ -6,10 +6,8 @@ function getMs(arr) {
         ms = arr[0] * 60 * 60 * 1000 + arr[1] * 60 * 1000 + arr[2] * 1000
     } else if (arr.length === 2) {
         ms = arr[0] * 60 * 1000 + arr[1] * 1000
-    } else if (arr.length === 1) {
-        ms = arr[0] * 1000
     }
-    return ms
+    return ms * 1000
 }
 
 
